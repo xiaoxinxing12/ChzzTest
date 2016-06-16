@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/but_activity"
+                style="@style/AutoWrapBut"
+                android:text="Activity" />
+
+            <Button
+                android:id="@+id/but_File"
+                style="@style/AutoWrapBut"
+                android:text="File" />
+
+            <Button
+                android:id="@+id/but_Memory"
+                style="@style/AutoWrapBut"
+                android:text="内存泄漏检测" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
