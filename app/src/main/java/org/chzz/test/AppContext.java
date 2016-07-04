@@ -3,6 +3,8 @@ package org.chzz.test;
 import android.app.Activity;
 import android.app.Application;
 
+import com.squareup.leakcanary.LeakCanary;
+
 /**
  * ============================================================
  * 版权 ：深圳市医友智能技术有限公司 版权所有 (c)   2016/6/16
@@ -20,5 +22,6 @@ public class AppContext extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        LeakCanary.install(this);
     }
 }

@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chzz.test">
+          package="org.chzz.test">
 
     <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".AppContext"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
 
-        <activity android:name=".ui.activity.ActivityActivity" />
-        <activity android:name=".ui.activity.FileActivity" />
-        <activity android:name=".ui.activity.MemoryActivity" />
+        <activity android:name=".ui.activity.ActivityActivity"/>
+        <activity android:name=".ui.activity.FileActivity"/>
+        <activity android:name=".ui.activity.MemoryActivity"/>
+        <activity android:name=".ui.activity.rxandroid.Example1Activity"/>
+        <activity android:name=".ui.activity.rxandroid.Example2Activity"/>
+        <activity android:name=".ui.activity.rxandroid.RxAndroidMainActivity"/>
         <activity android:name=".ui.activity.ImplicitlyActivity">
 
             <intent-filter>
-                <action android:name="org.chzz.implicitly" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="org.chzz.implicitly"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
     </application>

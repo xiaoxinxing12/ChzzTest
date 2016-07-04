@@ -25,9 +25,13 @@
                 android:text="File" />
 
             <Button
-                android:id="@+id/but_Memory"
+            android:id="@+id/but_Memory"
+            style="@style/AutoWrapBut"
+            android:text="内存泄漏检测" />
+            <Button
+                android:id="@+id/but_rxAndroid"
                 style="@style/AutoWrapBut"
-                android:text="内存泄漏检测" />
+                android:text="rxAndroid" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

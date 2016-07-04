@@ -9,10 +9,11 @@ import org.chzz.test.ui.activity.ActivityActivity;
 import org.chzz.test.ui.activity.BaseActivity;
 import org.chzz.test.ui.activity.FileActivity;
 import org.chzz.test.ui.activity.MemoryActivity;
+import org.chzz.test.ui.activity.rxandroid.RxAndroidMainActivity;
 
 public class MainActivity extends BaseActivity {
 
-    private Button mActivity,mFile,mMemory;
+    private Button mActivity,mFile,mMemory,mRxAndroid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends BaseActivity {
         mActivity = (Button) findViewById(R.id.but_activity);
         mFile = (Button) findViewById(R.id.but_File);
         mMemory= (Button) findViewById(R.id.but_Memory);
+        mRxAndroid= (Button) findViewById(R.id.but_rxAndroid);
         setListener();
     }
 
@@ -44,6 +46,10 @@ public class MainActivity extends BaseActivity {
             case R.id.but_Memory:
                 Intent _memory = new Intent(this, MemoryActivity.class);
                 startActivity(_memory);
+                break;
+            case R.id.but_rxAndroid:
+                Intent _rxAndroid = new Intent(this, RxAndroidMainActivity.class);
+                startActivity(_rxAndroid);
                 break;
         }
     }
